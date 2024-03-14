@@ -1,7 +1,7 @@
 export const images = {
   fotografie: [
     {
-      type: "fotografie",
+      type: "Fotografie",
       author: "Taru Huhkio",
       title: "Buntstifte",
       size: "80x80",
@@ -10,7 +10,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "fotografie",
+      type: "Fotografie",
       author: "Dusan Kipic",
       title: "Skizzen",
       size: "100x80",
@@ -19,7 +19,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "fotografie",
+      type: "Fotografie",
       author: "Samuel Castro",
       title: "Black&White",
       size: "100x80",
@@ -28,7 +28,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "fotografie",
+      type: "Fotografie",
       author: "Elena Mozhvilo",
       title: "Schmetterling",
       size: "80x80",
@@ -39,7 +39,7 @@ export const images = {
   ],
   kunst: [
     {
-      type: "kunst",
+      type: "Kunst",
       author: "Jene Stephaniuk",
       title: "Abstrakte",
       size: "120x80",
@@ -48,7 +48,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "kunst",
+      type: "Kunst",
       author: "Steve Johnson",
       title: "Acrylfarbe",
       size: "100x80",
@@ -57,7 +57,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "kunst",
+      type: "Kunst",
       author: "Gabriela Gomez",
       title: "Wand Malarei",
       size: "120x80",
@@ -66,7 +66,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "kunst",
+      type: "Kunst",
       author: "Felix Robert",
       title: "Bunte Fenster",
       size: "100x80",
@@ -77,7 +77,7 @@ export const images = {
   ],
   graffiti: [
     {
-      type: "graffiti",
+      type: "Graffiti",
       author: "Alp Ancel",
       title: "Aliens",
       size: "100x80",
@@ -86,7 +86,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "graffiti",
+      type: "Graffiti",
       author: "Ben Elwood",
       title: "Sprays",
       size: "80x80",
@@ -95,7 +95,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "graffiti",
+      type: "Graffiti",
       author: "John Rodenn",
       title: "Time",
       size: "100x80",
@@ -104,7 +104,7 @@ export const images = {
       prise: "100€",
     },
     {
-      type: "graffiti",
+      type: "Graffiti",
       author: "Paolo Bendandi",
       title: "Elefant",
       size: "100x80",
