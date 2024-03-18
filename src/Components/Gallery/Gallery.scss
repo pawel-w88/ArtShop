@@ -1,13 +1,15 @@
 .Gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  // display: flex;
+  // flex-wrap: wrap;
   gap: 10px;
   .image-container {
     position: relative;
     margin: 5px 0;
-    width: 100%;
-    border: 1px solid orange;
+    border: 2px solid #f49b27;
     border-radius: 5px;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   img {
@@ -17,11 +19,11 @@
     transition: transform 0.2s ease-in-out;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(2);
     }
 
     &.selected {
-      border: 2px solid blue;
+      border: 2px solid #f49b27;
     }
   }
 
