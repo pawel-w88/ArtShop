@@ -1,20 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+.dark {
+  background-color: #242424;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #242424;
+}
+
+.App {
+  padding: 20px;
+
+  .width-max {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    font-size: 5rem;
+    margin: 10px;
+  }
+
+  h3{
+    font-family: serif;
+    font-style: italic;
+    font-size: 3rem;
+    margin: 10px;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  button:hover {
+    border-color: rgb(96, 94, 94);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px rgb(96, 94, 94);
+  }
+}
+
 .display {
   position: relative;
   width: 250px;
-  height: 200px;
+  height: 150px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  // flex-direction: column;
+  justify-content: space-between;
   h1 {
     position: absolute;
-    top: -5%;
-    right: 10%;
+    top: -17%;
+    right: 18%;
     font-family: serif;
     font-size: 5rem;
     margin: 0;
