@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Project Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+The project is a web application built using React technology. It is an online art gallery that allows users to browse different types of artwork and add them to the shopping cart.
 
-Currently, two official plugins are available:
+## Project Structure
+The project consists of the following main parts:
+- `src/`: Folder containing the source code of the application.
+  - `Components/`: React components used in the application.
+    - `ImageSlider/`: Component handling image slider.
+    - `Gallery/`: Component handling image gallery.
+    - `Navbar/`: Navigation component.
+    - `Button/`: Button component.
+    - `Logo/`: Logo component.
+  - `Pages/`: Application pages.
+    - `ShoppingCard/`: Shopping cart page.
+  - `ThemeContext.tsx`: Context for handling dark/light theme.
+  - `App.tsx`: Main application file.
+  - `Icon.scss`: Styles for the icon component.
+- `public/`: Folder with static files.
+- `data.ts`: File with data used in the application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+To install and run the project locally, follow these steps:
+1. Clone the repository from GitHub.
+2. Navigate to the project directory.
+3. Run the command `npm install` to install all dependencies.
+4. Start the project using the command `npm start`.
 
-## Expanding the ESLint configuration
+## Usage
+After starting the project, you can browse the art gallery, add selected images to the shopping cart, and use other features available in the application.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies
+The project was built using the following technologies:
+- React
+- React Router
+- TypeScript
+- Lucide Icons
+- Sass
 
-- Configure the top-level `parserOptions` property like this:
+## Author
+Author: Pawel-W88
+Contact: rws.pawlak@gmail.com
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Comparison Project
+I developed this project to demonstrate the skills I have acquired, compared to another JavaScript project https://pawel-w88.github.io/ArtGaleryStore/ .
