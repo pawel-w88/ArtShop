@@ -35,4 +35,10 @@
     padding: 10px;
     text-align: left;
   }
+
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
 }

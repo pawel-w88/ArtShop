@@ -1,9 +1,12 @@
+// Gallery.js
 import { useState } from "react";
 import "./Gallery.scss";
 import { Icon } from "../Icon/Icon";
+import { Button } from "../Button/Button";
 
 export const Gallery = ({
   images,
+  addItem,
 }: {
   images: {
     type: string;
@@ -11,8 +14,9 @@ export const Gallery = ({
     title: string;
     size: string;
     image: string;
-    prise: string;
+    price: string; // Fixed typo in price
   }[];
+  addItem: (id: number, name: string, price: number) => void; // Function to add item to cart
 }) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
@@ -36,12 +40,21 @@ export const Gallery = ({
             <p>{image.author}</p>
             <p>{image.title}</p>
             <p>{image.size}</p>
-            <p>{image.prise}</p>
-            {index === selectedImage ? (
-              <Icon name="Heart" size={24} color="#ff0000" />
-            ) : (
-              <Icon name="Heart" size={24} color="#fff" />
-            )}
+            <p>{image.price}</p>
+            <div className="btn-icon">
+              {index === selectedImage ? (
+                <Icon name="Heart" size={24} color="#ff0000" />
+              ) : (
+                <Icon name="Heart" size={24} color="#fff" />
+              )}
+              <Button
+                onClick={() =>
+                  addItem(index, image.title, parseInt(image.price))
+                }
+              >
+                In den Warenkorb
+              </Button>
+            </div>
           </div>
         </div>
       ))}
