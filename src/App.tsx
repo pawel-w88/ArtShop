@@ -31,7 +31,6 @@ function App() {
             ? {
                 ...item,
                 quantity: item.quantity + 1,
-                price: item.price + item.price,
               }
             : item
         )
@@ -64,9 +63,13 @@ function App() {
             <Navbar>
               <Logo />
               <div>
-                <Button onClick={() => {}}><Link to="/">Home</Link></Button>
+                <Button onClick={() => {}}>
+                  <Link to="/">Home</Link>
+                </Button>
                 <Button onClick={() => {}}>Merkliste</Button>
-                <Button onClick={() => {}}><Link to="/warenkorb">Warenkorb</Link></Button>
+                <Button onClick={() => {}}>
+                  <Link to="/warenkorb">Warenkorb</Link>
+                </Button>
                 <ReactSwitch
                   onChange={setDarkMode}
                   checked={darkMode}
@@ -79,7 +82,10 @@ function App() {
             </Navbar>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/warenkorb" element={<Warenkorb cartItems={cart} />} />
+              <Route
+                path="/warenkorb"
+                element={<Warenkorb cartItems={cart} />}
+              />
             </Routes>
           </div>
         </div>
